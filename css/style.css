@@ -1,4 +1,4 @@
-/*font-family: 'Open Sans', sans-serif;*/
+/*Inicio el estilo del sitio*/
 
 * {
     margin: 0;
@@ -76,7 +76,7 @@ header {
 }
 
 .content {
-    padding: 150px 150px 0px 0px;
+    padding: 150px 10px 0px 150px;
 }
 
 .inicio {
@@ -166,69 +166,6 @@ nav ul li a.activo {
     background-color: #1a8faf;
 }
 
-.servicios {
-    padding: 80px 0px;
-    text-align: center;
-    color: #0e0e0e;
-}
-
-.portfolios h2 {
-    font-size: 55px;
-}
-
-.portfolio {
-    display: flex;
-    align-items: center;
-}
-
-.portfolio img {
-    width: 350px;
-}
-
-.portfolio-1 {
-    text-align: left;
-    margin-left: 100px;
-}
-
-.portfolio-1 h3 {
-    font-size: 35px;
-    margin-bottom: 15px;
-}
-
-.portfolio-1 p {
-    font-size: 18px;
-    color: #525254;
-    margin-bottom: 25px;
-}
-
-.portfolio-2 {
-    text-align: left;
-    margin-right: 100px;
-}
-
-.portfolio-2 h3 {
-    font-size: 35px;
-    margin-bottom: 15px;
-}
-
-.portfolio-2 p {
-    font-size: 18px;
-    color: #525254;
-    margin-bottom: 25px;
-}
-
-.btn-2 {
-    display: inline-block;
-    padding: 15px 25px;
-    border-radius: 25px;
-    background-color: #1a8faf;
-    color: #ffffff;
-}
-
-.btn-2:hover {
-    background-color: #1a8faf;
-}
-
 footer .principal {
     padding: 200px 0px 30px 0px;
     background-image: url(/images/footer.svg);
@@ -306,6 +243,73 @@ hr {
     color: #0EAEF3;
 }
 
+/*SECCION SERVICIOS*/
+
+.servicios {
+    padding: 80px 0px;
+    text-align: center;
+    color: #0e0e0e;
+}
+
+.portfolios h2 {
+    font-size: 55px;
+}
+
+.portfolio {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio img {
+    width: 350px;
+}
+
+.portfolio-1 {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.portfolio-1 h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.portfolio-1 p {
+    font-size: 18px;
+    color: #525254;
+    margin-bottom: 25px;
+}
+
+.portfolio-2 {
+    text-align: left;
+    margin-right: 100px;
+}
+
+.portfolio-2 h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.portfolio-2 p {
+    font-size: 18px;
+    color: #525254;
+    margin-bottom: 25px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: #1a8faf;
+    color: #ffffff;
+}
+
+.btn-2:hover {
+    background-color: #1a8faf;
+}
+
+/*SECCION GALERIA*/
+
 .galeria img {
     width: 25%;
     border: 1px solid #ddd;
@@ -332,7 +336,100 @@ hr {
     font-size: 25px;
     color: #525254;
     text-align: center;
+    line-height: 30px;
 }
+
+/*SECCION CONTACTO*/
+
+video {
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+}
+
+.video h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.informacion {
+    padding: 5%;
+    display: flex;
+    gap: 35px;
+}
+
+.informacion div {
+    width: 100%;
+}
+
+.datos h2 {
+    text-align: center;
+    line-height: normal;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.datos li {
+    list-style-type: disc;
+    line-height: 30px;
+}
+
+.formulario h2 {
+    text-align: center;
+    line-height: normal;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+}
+
+.form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+}
+
+.form label span {
+    color: #DA1414;
+}
+
+.form input,
+.form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+}
+
+.form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+}
+
+input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+}
+
+.form button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    background-color: #1a8faf;
+    color: #ffffff;
+}
+
+/*RESPONSIVE DEL SITIO*/
 
 @media (max-width: 991px) {
     .menu {
@@ -493,5 +590,25 @@ hr {
     .holder p {
         text-align: center;
         margin: 0px 10px 30px 10px;
+        line-height: 30px;
+    }
+
+    video {
+        position: relative;
+        width: 100vw;
+        height: 60vw;
+    }
+
+    .video h2{
+        line-height: 40px;
+    }
+
+    .informacion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .datos li {
+        line-height: 30px;
     }
 }
