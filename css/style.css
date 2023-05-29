@@ -611,4 +611,12 @@ input::-webkit-input-placeholder {
     .datos li {
         line-height: 30px;
     }
+
+    .datos ul {
+        padding: 5%;
+    }
+
+    .enlaces h3 {
+        line-height: 30px;
+    }
 }
